@@ -2,7 +2,6 @@ var mensaje;
 var texto;
 // const regex = /^[a-zA-Z0-9]+$/;
 
-
 //Evita Teclas 
 function check(e) {
     tecla = (document.all) ? e.keyCode : e.which;
@@ -65,7 +64,6 @@ function desencriptar() {
         mensaje = mensaje.replace(/imes/img, "i");
         mensaje = mensaje.replace(/ai/img, "a");
         mensaje = mensaje.replace(/ufat/img, "u");
-
         document.getElementById("textoRespuesta").innerHTML = mensaje;
     } else {
         alert("Digita alguna palabra para Encriptar");
