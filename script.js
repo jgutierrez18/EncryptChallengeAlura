@@ -18,7 +18,7 @@ function check(e) {
 
 function encriptar() {
     texto = document.getElementById("texto").value.toLowerCase();
-
+    //console.log(screen.width);
     if (texto != 0) {
         //Declaracon de llaves encriptado
         mensaje = texto.replace(/e/img, "enter");
@@ -27,8 +27,14 @@ function encriptar() {
         mensaje = mensaje.replace(/a/img, "ai");
         mensaje = mensaje.replace(/u/img, "ufat");
 
-        document.getElementById("textoRespuesta").innerHTML = mensaje;
-        document.getElementById("textoRespuesta").setAttribute('rows', 10);
+        //document.getElementById("textoRespuestaInput").value = mensaje;
+        //document.getElementById("textoRespuestaInput").style.visibility = "visible";
+
+      
+       document.getElementById("textoRespuesta").innerHTML = mensaje;
+    
+        //document.getElementById("respuestaAviso").innerHTML = mensaje;
+        //document.getElementById("textoRespuesta").setAttribute('rows', 15);
         document.getElementById("botonCopiar").style.visibility = "visible";
         //document.getElementById("botonCopiar").style.visibility = "inherit";
         //document.getElementById("respuestaImagen").style.visibility = "hidden";
@@ -64,6 +70,8 @@ function desencriptar() {
         mensaje = mensaje.replace(/imes/img, "i");
         mensaje = mensaje.replace(/ai/img, "a");
         mensaje = mensaje.replace(/ufat/img, "u");
+
+        //document.getElementById("respuestaAviso").innerHTML = mensaje;
         document.getElementById("textoRespuesta").innerHTML = mensaje;
     } else {
         alert("Digita alguna palabra para Encriptar");
