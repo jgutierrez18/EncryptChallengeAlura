@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Encritador de texto - Challenge Alura ONE!</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="header__menu">
+            <img src="./asset/Logo.png" alt="Logo Alura" class="logo_alura">
+        </nav>
+    </header>
+    <main>
+        <section class="formulario">
+            <textarea class="texto" id="texto" name="texto" placeholder="Ingresa el texto aqui!" cols="30" rows="10"
+                style="text-transform:uppercase" onkeypress="return check(event)"></textarea>
+            <div class="aviso">
+                <p class="texto__aviso">Solo letras mayusculas y sin acentos</p>
+            </div>
+            <div class="contenedor__botones">
+                <button class="boton__encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="boton__desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="contenido__respuesta">
+
+                <img id="respuestaImagen" class="respuesta__imagen" src="./asset/Muñeco.png" alt="">
+                <p class="texto__respuesta" id="respuestaAviso">Ningún mensaje fue encontrado</p>
+                <textarea class="texto__respuesta" id="textoRespuesta" style="text-transform:uppercase"
+                    placeholder=""></textarea>
+                <p class="texto__respuesta2" id="respuestaInstruccion">Ingresa el texto que desees encriptar o
+                    desencriptar.</p>
+            </div> <button class="boton__copiar" id="botonCopiar" type="button" onclick="copiar()">Copiar</button>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p>By: Jeferson Gutierrez 2024</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

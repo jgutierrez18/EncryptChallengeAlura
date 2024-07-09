@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #EAE7E7;
+    --color-secundario: #0a3871;
+    --color-terciario: #76B39D;
+    --color-hover: #2f2f2f;
+    --color-sombra-rbga: rbga(0, 0, 0, 0.08);
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-inter);
+}
+
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+#botonCopiar {
+    visibility: hidden;
+
+}
+
+header {
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+.logo_alura {
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.formulario {
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.texto {
+    font-size: 2rem;
+    width: 41.25rem;
+    height: 18rem;
+    background: transparent;
+    border: none;
+    resize: none;
+}
+
+.aviso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    top: 31.25rem;
+    position: absolute;
+
+}
+
+.texto__aviso {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.8;
+    line-height: 150%;
+    color: var(--color-terciario);
+
+}
+
+.contenedor__botones {
+    top: 32.875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    gap: 8px;
+}
+
+.boton__encriptar {
+    background: var(--color-secundario);
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+    border: 2px solid var(--color-terciario);
+    text-align: center;
+    width: 20.5rem;
+    height: 4.1875rem;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.boton__desencriptar {
+    background: var(--color-primario);
+    color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    text-align: center;
+    width: 20.5rem;
+    height: 4.1875rem;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tarjeta {
+    width: 16.875rem;
+    margin-top: 40px;
+    height: 36.25rem;
+    text-align: center;
+    background: var(--color-primario);
+    border: 1px solid var(--color-terciario);
+    box-shadow: 10px 24px 32px -8px var(--color-hover);
+    border-radius: 32px;
+    position: relative;
+}
+
+.contenido__respuesta {
+    width: 15.625rem;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--color-primario);
+    justify-content: space-between;
+
+}
+
+.respuesta__imagen {
+    background: var(--color-primario);
+}
+
+.texto__respuesta {
+    background: transparent;
+    border: none;
+    resize: none;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-secundario);
+
+
+}
+
+.texto__respuesta2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-hover);
+    background: var(--color-primario);
+}
+
+.boton__copiar {
+
+    position: relative;
+    top: 120px;
+    padding: 24px;
+    width: 90%;
+    background: var(--color-secundario);
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+    border: 2px solid var(--color-terciario);
+    text-align: center;
+
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    /* 
+    top: 90%;
+    width: 20.5rem;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    border-color: var(--color-terciario);
+    border: 2px solid var(--color-terciario);
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    gap: 10px;*/
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 10px;
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding: 10%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 5%;
+        justify-content: space-between;
+    }
+
+    .formulario {
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .tarjeta {
+        margin: 120px 0px 0px 0px;
+        width: 90%;
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-end;
+    }
+
+    .contenido__respuesta {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .respuesta__imagen {
+        display: none;
+    }
+
+    .boton__copiar {
+        width: 100%;
+    }
+
+    .texto__respuesta {width: 100%;}
+
+}
